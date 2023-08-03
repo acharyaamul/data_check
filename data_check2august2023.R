@@ -1,5 +1,4 @@
-setwd("~/00_GISDATA/00_Leaf/crystal/analysis_august/result/")
-list.files()
+#### This is the code for checking data taken from CEO####
 nfi<-read.csv( "ceo-NFI-ART-TREES-Data-Collection-2012-2021-sample-data-2023-08-02.csv",header=T)
 names(nfi)
 # 9-7 points Intact forest
