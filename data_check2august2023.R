@@ -13,4 +13,7 @@ dat1<-dat %>% group_by(status)%>%
   summarise(biomasa_ad= mean(pl_total_biom_ad_ton_ha),
             count=n())
 table(dat$State.of.forest.in.year.of.date_measurement)
-
+dat2<-dat %>% group_by(pl_phy_name) %>% 
+  summarise(biomasa_ad= mean(pl_total_biom_ad_ton_ha),
+            count=n())
+sum(dat2$count)
